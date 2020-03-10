@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template: 150px 160px 250px / repeat(4, minmax(20px, 1fr));
+    gap: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.item:nth-child(4){
+    background-color: blue;
+    overflow: auto;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 100px);
+}
+
+.item .item {
+    background-color: yellow;
+}
