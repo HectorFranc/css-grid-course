@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+}
